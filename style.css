@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #f8f9fa; 
+    /* background: linear-gradient(to bottom, #3498db, #2980b9); Gradient background */
+    font-family: Arial, sans-serif; /* Use a common font for better readability */
+}
+
+.main {
+    width: 90%;
+    max-width: 470px;
+    background-color: #3498db; ;
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+   
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the search input and button */
+    margin-bottom: 20px; /* Add some space below the search bar */
+    
+    
+}
+
+.search input {
+    height: 40px; /* Reduce the height of the input */
+    width: 70%; /* Adjust to take up 70% of the available space */
+    max-width: 300px; /* Set a maximum width for better responsiveness */
+    border-radius: 20px;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-size: 16px; /* Reduce font size for better fit */
+    color: #333; /* Darken text color for better contrast */
+    background: #fff; /* White background for clarity */
+}
+
+button {
+    width: 40px; /* Reduce the size of the button */
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #fff; /* White background for clarity */
+    transition: background 0.3s ease; 
+    margin-left: 10px;
+}
+
+button:hover {
+    transform: scale(1.1); /* Scale button up on hover */
+    background: #f2f2f2;
+}
+
+.weather-icon {
+    width: 100px; /* Reduce the size of the weather icon */
+    margin-top: 20px; /* Adjust spacing */
+}
+
+.weather h1 {
+    font-size: 50px; /* Reduce font size for better fit */
+    font-weight: 600; /* Increase font weight for emphasis */
+    margin: 10px 0; /* Adjust spacing */
+}
+
+.weather h2 {
+    font-size: 30px; /* Reduce font size for better fit */
+    font-weight: 400;
+    margin: 0;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 30px; /* Adjust spacing */
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img {
+    width: 30px; /* Reduce the size of the icons */
+    margin-right: 10px;
+}
+
+.humidity, .wind {
+    font-size: 18px; /* Reduce font size for better fit */
+    margin: 0;
+}
+.weather{
+    display: none;
+}
+.error{
+    text-align:center;
+    font-size: 14px;
+    display: none;
+    text-transform: uppercase;
+   
+}
