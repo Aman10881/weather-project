@@ -36,6 +36,9 @@ if(response.status == 404){
     else if(data.weather[0].main == "Mist"){
         weatherIcon.src = "mist.png"
     }
+    else if(data.weather[0].main == "Snow"){
+        weatherIcon.src = "snow.png"
+    }
     
     document.querySelector(".weather").style.display="block";
     document.querySelector(".error").style.display = "none";
